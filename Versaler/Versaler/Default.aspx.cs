@@ -17,21 +17,19 @@ namespace Versaler
             {
                 OutputLabel.Text = String.Format("Texten innehåller {0} versaler", InputTextBox.Text.GetNumberOfCapitals());
                 InputTextBox.Enabled = false;
-                InputTextBox.BackColor = System.Drawing.Color.Gray;
                 SubmitButton.Text = "Rensa";
             }
             else
             {
                 SubmitButton.Text = "Bestäm antal versaler";
                 InputTextBox.Text = "";
-                InputTextBox.BackColor = System.Drawing.Color.White;
                 InputTextBox.Enabled = true; 
             }
         }
 
         protected void ValidateButton_Click(object sender, EventArgs e)
         {
-            int number = int.Parse(ValidateTextBox.Text); 
+     //       int number = int.Parse(ValidateTextBox.Text); 
         }
     }
 }
