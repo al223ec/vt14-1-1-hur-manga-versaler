@@ -24,8 +24,16 @@
             <p>
                 <asp:Label ID="OutputLabel" runat="server" Text=""></asp:Label>
             </p>
+<%--            <h1>Validering</h1>
+            <p>
+                <asp:TextBox ID="ValidateTextBox" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Detta fält kan inte vara tomt" Text="*" ControlToValidate="ValidateTextBox"></asp:RequiredFieldValidator>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Måste innehålla ett heltal" Operator="DataTypeCheck" Type="Integer" ControlToValidate="ValidateTextBox"></asp:CompareValidator>
+            </p>
+            <p>
+                <asp:Button ID="ValidateButton" runat="server" Text="Validera" OnClick="ValidateButton_Click" />
+            </p>--%>
         </div>
-
     </form>
 </body>
 </html>

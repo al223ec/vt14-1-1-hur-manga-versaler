@@ -28,5 +28,10 @@ namespace Versaler
                 InputTextBox.Enabled = true; 
             }
         }
+
+        protected void ValidateButton_Click(object sender, EventArgs e)
+        {
+            int number = int.Parse(ValidateTextBox.Text); 
+        }
     }
 }
