@@ -1,6 +1,6 @@
 ﻿body {
    font-size: 13px;
-   font-family: Calibri;
+   font-family: Cambria;
    font-style: normal;
    font-weight: 400;
 }
@@ -8,8 +8,12 @@ div {
     width:600px; 
     margin:auto; 
 }
+.MultiLineTextBox
+{
+    resize:none;
+}
 h1 {
-   font-size: 64px;
+   font-size: 52px;
    line-height: 73px;
    margin-bottom: 25px;
 }
@@ -102,6 +106,16 @@ p.inverse-heading {
    letter-spacing: 2px;
    margin-top: 50px;
 }
- 
+
+p.footer {
+    text-align: right;
+   letter-spacing: 2px;
+   font-size: 13px;
+   margin-bottom: 35px;
+   border-width: 1px 0px 0px 0px;
+   border-style: dotted;
+   margin-top: 45px;
+   color: rgba(0,0,0,1);
+}
 
  

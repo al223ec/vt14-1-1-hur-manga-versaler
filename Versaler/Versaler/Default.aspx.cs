@@ -13,23 +13,18 @@ namespace Versaler
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            if (InputTextBox.Enabled)
+            if (InputTextBox.Text != "") //Kan inte använda .Enabled pga ViewStateMode = disabled, kontrollerar ifall användaren skickar text ist
             {
-                OutputLabel.Text = String.Format("Texten innehåller {0} versaler", InputTextBox.Text.GetNumberOfCapitals());
+                OutputLabel.Text = String.Format("{0} <br> Innehåller {1} versaler",InputTextBox.Text, InputTextBox.Text.GetNumberOfCapitals());
+                InputTextBox.Text = ""; 
                 InputTextBox.Enabled = false;
                 SubmitButton.Text = "Rensa";
             }
             else
             {
                 SubmitButton.Text = "Bestäm antal versaler";
-                InputTextBox.Text = "";
                 InputTextBox.Enabled = true; 
             }
-        }
-
-        protected void ValidateButton_Click(object sender, EventArgs e)
-        {
-     //       int number = int.Parse(ValidateTextBox.Text); 
         }
     }
 }
