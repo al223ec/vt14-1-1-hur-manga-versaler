@@ -10,15 +10,21 @@ namespace Versaler
         public static int GetNumberOfCapitals(this string text)
         {
             int num = 0; 
-            for (int i = 0; i < text.Length; i++)
+            foreach (char c in text)
             {
-                if (text[i] == Char.ToUpper(text[i]) && Char.IsLetter(text[i]))
+                if (c == char.ToUpper(c) && Char.IsLetter(c))
                 {
-                    num++; 
+                    num++;
                 }
             }
-            return num; 
+            return num;
+            //for (int i = 0; i < text.Length; i++)
+            //{
+            //    if (text[i] == Char.ToUpper(text[i]) && Char.IsLetter(text[i]))
+            //    {
+            //        num++; 
+            //    }
+            //}
         }
-
     }
 }
