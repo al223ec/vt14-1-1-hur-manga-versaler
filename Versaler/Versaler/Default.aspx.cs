@@ -18,12 +18,12 @@ namespace Versaler
                 OutputLabel.Text = String.Format("{0} <br> Innehåller {1} versaler",InputTextBox.Text, InputTextBox.Text.GetNumberOfCapitals());
                 InputTextBox.Text = ""; 
                 InputTextBox.Enabled = false;
-                SubmitButton.Text = "Rensa";
+                SubmitButton.Text = "Återställ";
             }
             else
             {
                 SubmitButton.Text = "Bestäm antal versaler";
-                InputTextBox.Enabled = true; 
+                //InputTextBox.Enabled = true; 
             }
         }
     }
